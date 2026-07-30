@@ -3,95 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeMaster</title>
+    <title>Calculator</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <nav>
-        <h2 class="logo">CodeMaster</h2>
+<div class="calculator">
 
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <input type="text" id="display" readonly>
 
-        <button>Sign Up</button>
-    </nav>
-</header>
+    <div class="buttons">
 
-<section class="hero">
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="appendValue('/')">/</button>
+        <button onclick="appendValue('*')">*</button>
+        <button onclick="deleteLast()">⌫</button>
 
-    <div class="left">
-        <h1>Learn Web Development</h1>
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button onclick="appendValue('-')">-</button>
 
-        <p>
-            Build modern websites using HTML, CSS and JavaScript.
-            Start your coding journey today.
-        </p>
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button onclick="appendValue('+')">+</button>
 
-        <button>Get Started</button>
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        <button onclick="calculate()">=</button>
+
+        <button class="zero" onclick="appendValue('0')">0</button>
+        <button onclick="appendValue('.')">.</button>
+
     </div>
 
-    <div class="right">
-        <img src="images/undraw_next-task_jtbr.png" alt="">
-    </div>
-
-</section>
-
-<section class="features">
-
-<h2>Why Choose Us?</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Expert Mentors</h3>
-<p>Learn from industry professionals.</p>
 </div>
 
-<div class="card">
-<h3>Live Projects</h3>
-<p>Gain real-world experience.</p>
-</div>
-
-<div class="card">
-<h3>Placement Support</h3>
-<p>Prepare for interviews confidently.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="about">
-    <h2>About Us</h2>
-
-    <p>
-        CodeMaster helps students learn Web Development,
-        JavaScript, React, and Full Stack Development through
-        practical projects and expert guidance.
-    </p>
-</section>
-
-<section class="contact">
-
-<h2>Contact</h2>
-
-<p>Email : info@codemaster.com</p>
-
-<p>Phone : +91 9876543210</p>
-
-</section>
-
-<footer>
-
-<p>© 2026 CodeMaster | All Rights Reserved</p>
-
-</footer>
+<script src="script.js"></script>
 
 </body>
 </html>
